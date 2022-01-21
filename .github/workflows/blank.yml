@@ -31,6 +31,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Build
-        run: docker build -t ${{secrets.DOCKER_USER}}/Ejercicio_3.
+        run: docker build -t ${{secrets.DOCKER_USER}}/Ejercicio_3
       - name: Push
-        run: docker push ${{secrets.DOCKER_USER}}/Ejercicio_3:latest
+      - run: docker push ${{secrets.DOCKER_USER}}/Ejercicio_3:latest
